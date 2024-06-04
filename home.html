@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function asynchronousTask() {
+    console.log("Task 1 KONTOl");
+    setTimeout(() => {
+        console.log("Task K");
+    }, 1000);
+    setTimeout(() => {
+        console.log("Task O");
+    }, 2000);
+    setTimeout(() => {
+        console.log("Task N");
+    }, 3000);
+    setTimeout(() => {
+        console.log("Task T");
+    }, 4000);
+    setTimeout(() => {
+        console.log("Task O");
+    }, 5000);
+    setTimeout(() => {
+        console.log("Task L");
+        console.log("DONE");
+    }, 1000);
+    // Setelah 2 detik, mencetak pesan async
+    console.log("TUNGGU KONTOL");
+
+}
+
+asynchronousTask();
+console.log("All tasks completed!");
+
+    </script>
+</body>
+</html>
